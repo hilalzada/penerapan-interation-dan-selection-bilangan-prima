@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	
+	cout << "Nama : Muhammad Hilal Zada " << endl;
+	cout << "Nim  : ETE10190103 " << endl;
+	cout << endl;
+	cout << "Ini adalah penerapan iteration dan selection bilangan prima "<< endl;
+	
+	int angkaAwal = 1;
+	int angkaAkhir = 70;
+	
+	for ( int i = angkaAwal ; i  <= angkaAkhir ; i++ ) {
+		int counterPrima = 0;
+		for ( int j = 1 ; j <= i ; j++ ) {
+			if ( i % j == 0 ) {
+				counterPrima++;
+				
+			}
+		}
+		
+		if (counterPrima == 2) {
+			cout << i << " adalah bilangan PRIMA " << endl;
+		}
+	}
+	
+	return 0;
+}
